@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +27,7 @@
         }
 
         .container {
-            width: 80%;
+            width: 90%; /* Уменьшил ширину для мобильных устройств */
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
@@ -42,6 +43,7 @@
 
         p {
             font-size: 1.1em;
+            margin: 15px 0; /* Добавил отступы для лучшей читаемости */
         }
 
         footer {
@@ -64,12 +66,46 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Адаптивные стили для мобильных устройств */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em; /* Уменьшаем размер заголовка на мобильных */
+            }
+
+            .container {
+                width: 95%; /* Увеличиваем ширину контейнера для мобильных */
+                padding: 15px;
+            }
+
+            p {
+                font-size: 1em; /* Уменьшаем размер текста для мобильных */
+            }
+
+            footer p {
+                font-size: 0.9em; /* Уменьшаем размер текста в футере */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em; /* Ещё меньше заголовок для очень маленьких экранов */
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            p {
+                font-size: 0.95em; /* Ещё меньше текст для очень маленьких экранов */
+            }
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1> Ваййй, молодец, дошла</h1>
+        <h1>Ваййй, молодец, дошла</h1>
     </header>
 
     <div class="container">
